@@ -40,9 +40,6 @@ button, .btn {
   body {
     font-family: Arial, sans-serif;
   }
-  .nav{
-    margin-bottom: auto !important;
-  }
   .container.aos-init.aos-animate{
     margin: auto;
   }
