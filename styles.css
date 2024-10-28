@@ -400,6 +400,9 @@ header nav ul li a:hover {
     .skills p{
         font-size: 12px;
     }
+    .project-card{
+        width:350px;
+    }
 }
 
 
