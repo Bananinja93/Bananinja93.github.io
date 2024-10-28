@@ -125,6 +125,9 @@ button, .btn {
       .about-text{
           min-width: 100px !important;
       }
+      .modal-content-container{
+          flex-direction:column !important;
+      }
   }
   
 /* Header */
