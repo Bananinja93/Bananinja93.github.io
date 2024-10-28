@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+      <div class="container nav">
+        <nav class="navbar">
+            <div class="logo"><img src="./img/MyPortfolio_logo_transparent.png" alt=""></div>
+            <ul class="nav-links">
+              <li><a href="#about">Обо мне</a></li>
+              <li><a href="#skills">Скиллы</a></li>
+              <li><a href="#projects">Примеры работ</a></li>
+              <li><a href="#contact">Связаться</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav>
+      </div>
+        <div class="container" data-aos="fade-down">
+            <h1 class="animated-gradient-text">Портфолио frontend-разработчика </h1>
+        </div>
+    </header>
+    <div class="floating-bg parallax"></div>
+    <div class="content">
+
+    <!-- About Me -->
+    <section id="about" class="section about" data-aos="fade-up">
+        <div class="container">
+            <div class="about-text">
+                <h2>Обо мне</h2>
+                <p>Привет! Я веб-разработчик с опытом работы более 3 лет. Моя страсть — создавать современные, удобные и адаптивные веб-сайты. Я специализируюсь на фронтенд-разработке с использованием новейших технологий.</p>
+    
+                <h3>Мой опыт</h3>
+                <p>За время своей работы я успешно завершил множество проектов для различных клиентов, от стартапов до крупных компаний. Я отлично разбираюсь в HTML, CSS, JavaScript</p>
+    
+                <h3>Мое образование</h3>
+                <p>Я прошел профессиональный курс по веб-разработке и дизайну от университета Иннополис. Это помогло мне развить навыки, необходимые для успешной работы в области разработки.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skill-section" data-aos="fade-up">
+        <h2>Навыки</h2>
+        <div class="skills">
+            <div class="skill-card">
+              <div class="skill-front">
+                <p>HTML</p>
+              </div>
+              <div class="skill-back">
+                <p>HTML — язык гипертекстовой разметки, который используется для создания структуры веб-страниц.</p>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-front">
+                <p>CSS</p>
+              </div>
+              <div class="skill-back">
+                <p>CSS — каскадные таблицы стилей, используются для оформления и позиционирования элементов на странице.</p>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-front">
+                <p>JavaScript</p>
+              </div>
+              <div class="skill-back">
+                <p>JavaScript — язык программирования для создания динамических и интерактивных элементов на веб-страницах.</p>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-front">
+                <p>PHP</p>
+              </div>
+              <div class="skill-back">
+                <p>PHP - серверный язык программирования, используемый для создания динамических веб-страниц и взаимодействия с базами данных.</p>
+              </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-front">
+                  <p>Git</p>
+                </div>
+                <div class="skill-back">
+                  <p>Git - система управления версиями, позволяющая отслеживать изменения в коде, сотрудничать с другими разработчиками и управлять различными версиями проектов.</p>
+                </div>
+              </div>
+          </div>
+          
+          
+          
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects" data-aos="fade-up">
+        <h2>Примеры работ</h2>
+        <div class="projects">
+            <div class="project-card">
+              <div class="project-front">
+                <img src="./img/e-comm.png" alt="Проект 1">
+                <h3>E-commerce</h3>
+              </div>
+              <div class="project-back" onclick="openModalFromCard(this.parentNode)">
+                <p>Стильный, интуитивный дизайн, созданный для вашего удобства. Каждый элемент продуман до мелочей, чтобы шопинг был не только простым, но и эстетически приятным.</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-front">
+                <img src="./img/kolodec.png" alt="Проект 2">
+                <h3>Landing page</h3>
+              </div>
+              <div class="project-back" onclick="openModalFromCard(this.parentNode)">
+                <p>Современный и динамичный дизайн лендинга создан для вашего максимального удобства: чистый интерфейс, удобная навигация и продуманная структура</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-front">
+                <img src="./img/cretin.png" alt="Проект 3">
+                <h3>Project</h3>
+              </div>
+              <div class="project-back" onclick="openModalFromCard(this.parentNode)">
+                <p>Гармония стиля и функциональности: лаконичный дизайн с акцентами, интуитивные элементы и плавные переходы создают комфортное взаимодействие</p>
+              </div>
+            </div>
+          </div>
+    </section>
+    
+
+    <!-- Contact Form -->
+    <section id="contact" class="section contact" data-aos="fade-up">
+        <div class="container">
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Сообщение отправлено!</p>
+                </div>
+            </div>
+            <h2>Связаться со мной</h2>
+            <form id="contact-form" action="#" method="POST">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" id="submit-btn" class="btn">Отправить</button>
+            </form>
+        </div>
+    </section>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Обо мне</h3>
+                <p>Я — веб-разработчик с опытом создания креативных и функциональных сайтов. Специализируюсь на современных технологиях и пользовательских интерфейсах.</p>
+            </div>
+    
+            <div class="footer-navigation">
+                <h3>Навигация</h3>
+                <ul>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#skills">Мои навыки</a></li>
+                    <li><a href="#projects">Примеры работ</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-socials">
+                <h3>Социальные сети</h3>
+                <ul>
+                    <li><a href="https://linkedin.com" target="_blank">VK</a></li>
+                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Telegram</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h3>Контакты</h3>
+                <p>Email: <a href="mailto:example@example.com">alexii.kulya@gmail.com</a></p>
+            </div>
+        </div>
+    
+        <div class="footer-copyright">
+            <p>&copy; 2024 Мое Портфолио</p>
+        </div>
+    </footer>
+</div>
+
+          
+          <!-- Модальное окно -->
+          <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content-container">
+              <img class="modal-content" id="modalImg">
+              <img class="modal-content-mobile" id="modalMobileImg"> 
+            </div>
+            <div id="caption"></div>
+          </div>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="scrpts.js"></script>
+</body>
+</html>
