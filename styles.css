@@ -131,6 +131,9 @@ button, .btn {
       .modal-content-container{
           flex-direction:column !important;
       }
+      .navbar{
+          flex-direction: column;
+      }
   }
   
 /* Header */
