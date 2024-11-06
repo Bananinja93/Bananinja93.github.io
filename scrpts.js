@@ -57,3 +57,25 @@ document.querySelectorAll('.project-card').forEach(card => {
     navLinks.classList.toggle("active");
     hamburger.classList.toggle("active");
   }
+  /*Logo*/
+  document.addEventListener("mouseenter", () => {
+    const menuAni = document.querySelector(".nav-links");
+    const menuAnili = document.querySelectorAll('.nav-links li');
+    console.log(menuAnili);
+    const circle = document.querySelector(".circle");
+
+    
+    setTimeout(() => {
+      if (window.matchMedia('(min-width: 766px)').matches) {
+        menuAnili.forEach((elem) =>{
+        elem.style.width = "20%"
+      })
+      menuAni.style.cssText = 'width:100%; margin-left:0; opacity:1;';
+      circle.style.transform = "translateX(-50px)";
+      }
+      else{
+        
+      }
+    
+    }, 50); 
+});
