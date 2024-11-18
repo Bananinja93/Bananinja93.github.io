@@ -53,9 +53,16 @@ document.querySelectorAll('.project-card').forEach(card => {
   function toggleMenu() {
     const navLinks = document.querySelector(".nav-links");
     const hamburger = document.querySelector(".hamburger");
+    const menuAni = document.querySelector(".nav-links");
+    const menuAnili = document.querySelectorAll('.nav-links li');
   
     navLinks.classList.toggle("active");
     hamburger.classList.toggle("active");
+    menuAni.style.cssText = 'opacity:1;position:relative;margin-left: 0;top:0;text-align: center;';
+    menuAnili.forEach((elem) =>{
+      elem.style.width = "100%"
+      elem.style.paddingBottom = "20px"
+    })
   }
   /*Logo*/
   document.addEventListener("mouseenter", () => {
