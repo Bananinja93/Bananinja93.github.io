@@ -71,7 +71,6 @@ document.querySelectorAll('.project-card').forEach(card => {
     const menuAnili = document.querySelectorAll('.nav-links li');
     console.log(menuAnili);
     const circle = document.querySelector(".circle");
-
     
     setTimeout(() => {
       if (window.matchMedia('(min-width: 766px)').matches) {
@@ -87,3 +86,7 @@ document.querySelectorAll('.project-card').forEach(card => {
     
     }, 50); 
 });
+/*Video*/
+window.matchMedia('(max-width: 766px)').matches ? document.querySelector(".programmer").style.display = 'none' 
+: document.getElementById('example').style.width = 'auto';
+

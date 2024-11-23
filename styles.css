@@ -126,6 +126,7 @@ body {
     }
     .about-text{
         min-width: 100px !important;
+        padding-top: 0 !important;
     }
     .modal-content-container{
         flex-direction:column !important;
@@ -280,7 +281,20 @@ header nav ul li a:hover {
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-
+.about-me{
+  display: flex;
+}
+.about-text, .about-vid{
+  width: 48%;
+}
+.about-text{
+  padding-top: 98px;
+}
+video{
+  margin-left: -127%;
+  opacity: 0.2;
+  border-radius: 2%;
+}
 @media (max-width: 768px) {
   .container {
       flex-direction: column;
@@ -709,3 +723,19 @@ footer {
   transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55); 
 }
 
+/*Video*/
+video::-webkit-media-controls {
+  display: none;
+}
+@media (max-width: 1350px) {
+    .about-text, .about-vid{
+      width: 100%;
+    }
+    .about-vid{
+    position: absolute;
+    width: 100%;
+    }
+    video{
+      margin-left:0;
+    }
+}
