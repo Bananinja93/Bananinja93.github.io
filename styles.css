@@ -88,7 +88,9 @@ body {
   margin: 4px 0;
   transition: 0.4s;
 }
-
+.m-t{
+  margin-top: 76px;
+}
 /* Мобильное меню */
 @media (max-width: 768px) {
     header{
